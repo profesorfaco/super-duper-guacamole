@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"); /* se le obliga a cada compu tener la tipografía */
+
+html,
+body {
+    /* omo no tiene nada la inicio, solo está buscando a este elemento */
+    margin: 0;
+    padding: 0;
+    background: #e4a1df;
+    color: #4c0529; /* de la tipografía */
+    font-family: Helvetica, Arial, sans-serif;
+    min-height: 100%;
+} /* todo esto es parte de solo el body, se aplica solo ahí */
+
+a {
+    /* significa que todos los vídulos vana  tener rstas carateríticas */
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* si le pongo el none significa que no tiene la línea de abajo*/
+}
+
+a:hover {
+    /* es cuando pongo el cursor arriba hay un cambio. "hover" significa que el elemento está en una situación particular */
+    color: blueviolet;
+    text-decoration: underline;
+    transition: all ease 2s;
+}
+
+a:hover:after {
+    content: " -‧°𐐪♡𐑂°‧-";
+}
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80% - 4rem);
+    padding: 2rem;
+    margin: auto;
+    background: rgba(255, 255, 255, .9);
+    border-radius: .5rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+
+h1,
+h2,
+span.pixel {
+    /* la "coma" significa que tando al h1, h1 también se lo cambia al span. Sin la "coma" significa que es el span del h1  */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+span.pixel {
+    /* el punto es del class, que el final es el nombre de la etiqueta que debe de estar en el html */
+    color: #f00;
+    font-size: 80%;
+}
+
+h1 {
+    font-size: calc(2rem + 5vw); /* en este caso el tamaño se va calculando  */
+}
+
+h2 {
+    font-size: calc(1rem + 2vw);
+}
